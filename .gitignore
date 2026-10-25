@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env 
+
+# Local database
+agentverse.db
+*.db
+
+# Generated research reports
+outputs/
+
+# Editor settings
+.vscode/
+.idea/
+
+# Environment variable files
+.env.*
+!.env.example
