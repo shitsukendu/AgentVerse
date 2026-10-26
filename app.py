@@ -65,10 +65,39 @@ st.markdown(
         --av-cyan: #06B6D4;
     }
 
+    /* Main page spacing */
     .block-container {
-        padding-top: 0.8rem;
+        padding-top: 0rem !important;
         padding-bottom: 3rem;
         max-width: 1500px;
+    }
+
+    /* Reduce the top header space */
+    [data-testid="stHeader"] {
+        height: 2.5rem;
+        background: transparent;
+    }
+
+    /* Keep the toolbar compact */
+    [data-testid="stToolbar"] {
+        top: 0.25rem;
+        right: 0.5rem;
+    }
+
+    /* Hero section spacing */
+    .av-hero {
+        margin-top: 0rem;
+        padding: 28px 30px;
+        border-radius: 22px;
+        margin-bottom: 22px;
+        background: linear-gradient(
+            125deg,
+            #0891B2 0%,
+            #2563EB 48%,
+            #7653B9 100%
+        );
+        color: #FFFFFF;
+        box-shadow: 0 12px 35px rgba(55, 80, 160, 0.20);
     }
 
     [data-testid="stSidebar"] {
@@ -158,13 +187,43 @@ st.markdown(
         line-height: 1.7;
     }
 
+    /* Common button styling */
     div.stButton > button,
     div.stDownloadButton > button,
     div.stFormSubmitButton > button {
-        border-radius: 10px;
-        font-weight: 650;
+        border-radius: 10px !important;
+        font-weight: 650 !important;
         min-height: 2.7rem;
         transition: all 0.2s ease;
+    }
+
+    /* Cyan: New Research and other primary buttons */
+    .stButton button[kind="primary"],
+    button[data-testid="stBaseButton-primary"] {
+        background: #0891B2 !important;
+        background-color: #0891B2 !important;
+        border: 1px solid #0891B2 !important;
+        color: #FFFFFF !important;
+    }
+
+    /* Cyan: Initiate Research form submit button */
+    [data-testid="stFormSubmitButton"] button,
+    .stFormSubmitButton button {
+        background: #0891B2 !important;
+        background-color: #0891B2 !important;
+        border: 1px solid #0891B2 !important;
+        color: #FFFFFF !important;
+    }
+
+    /* Hover effects */
+    .stButton button[kind="primary"]:hover,
+    button[data-testid="stBaseButton-primary"]:hover,
+    [data-testid="stFormSubmitButton"] button:hover,
+    .stFormSubmitButton button:hover {
+        background: #0E7490 !important;
+        background-color: #0E7490 !important;
+        border-color: #0E7490 !important;
+        color: #FFFFFF !important;
     }
 
     div[data-testid="stTextArea"] textarea {
@@ -702,7 +761,7 @@ if st.session_state.get("page") == "comparison":
             pdf_buffer.close()
 
             st.download_button(
-                label="⬇️ Download Comparison Report (PDF)",
+                label="Download Comparison Report (PDF)",
                 data=pdf_bytes,
                 file_name="research_comparison_report.pdf",
                 mime="application/pdf",
@@ -763,7 +822,7 @@ if selected_report is None:
         )
 
         submitted = st.form_submit_button(
-            "🚀  Run Research",
+            "Initiate Research",
             type="primary",
             use_container_width=True,
         )
@@ -1393,7 +1452,7 @@ else:
 
     with download1:
         st.download_button(
-            "⬇️ Download Markdown",
+            "Download Markdown",
             data=report,
             file_name="agentverse_research_report.md",
             mime="text/markdown",
@@ -1402,7 +1461,7 @@ else:
 
     with download2:
         st.download_button(
-            "⬇️ Download TXT",
+            "Download TXT",
             data=report,
             file_name="agentverse_research_report.txt",
             mime="text/plain",
@@ -1411,7 +1470,7 @@ else:
 
     with download3:
         st.download_button(
-            "⬇️ Download PDF",
+            "Download PDF",
             data=pdf_data,
             file_name="agentverse_research_report.pdf",
             mime="application/pdf",
