@@ -5,9 +5,9 @@ AgentVerse — Multi-Agent AI Research Intelligence
 </p><p align="center">
   An AI-powered research workflow built with LangGraph, Streamlit, and Gemini to coordinate research, evaluate sources, and generate structured reports.
 </p><p align="center">
-  <a href="YOUR_LIVE_DEMO_URL">🚀 Live Demo</a>
+  <a href="https://agentverse-ujuppsjzjkh6en4losoqvp.streamlit.app/">🚀 Live Demo</a>
   &nbsp; • &nbsp;
-  <a href="https://github.com/shitsukendu/AgentVerse">💻 GitHub Repository</a>
+  <a href="https://shitsukendu.github.io/AgentVerse/">💻 GitHub Repository</a>
 </p><p align="center">
   <em>Research smarter. Verify sources. Turn information into insight.</em>
 </p>---
@@ -22,23 +22,25 @@ The goal is to make AI-assisted research more organized, traceable, and useful f
 
 🖼️ Application Preview
 
-«Add your actual application screenshots in the spaces below.»
+### Main Dashboard
 
-Main Dashboard
+![AgentVerse Main Dashboard](screenshots/home-dashboard.png)
 
-<!-- Add your dashboard screenshot below this line -->"AgentVerse Dashboard"
+### Research Workflow  
 
-Research Workflow & Results
+![Research Dashboard](screenshots/research-dashboard.png) 
 
-<!-- Add your research workflow screenshot below this line -->"Research Workflow"
+### Research Analytics
 
-Source Quality & Research Analytics
+![Research Results](screenshots/research-results.png)
 
-<!-- Add your source analytics screenshot below this line -->"Source Quality Analytics"
+### Source Quality  
 
-Research Comparison & PDF Export
+![Research Sources](screenshots/research-sources.png)
 
-<!-- Add your research comparison screenshot below this line -->"Research Comparison"
+### Research Comparison & PDF Export
+
+![Research Comparison](screenshots/research-comparison.png)
 
 ---
 
@@ -259,8 +261,6 @@ Interests: Multi-Agent Systems, Generative AI, Retrieval-Augmented Generation (R
 GitHub: https://github.com/shitsukendu
 
 LinkedIn: https://www.linkedin.com/in/sukendu-shit-825203283/
-
-Portfolio: [Add Your Portfolio URL]
 
 ---
 
